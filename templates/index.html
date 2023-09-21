@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style_css.css') }}">
+</head>
+<body style="background-color:#F5DA81">
+    <div>
+        <!--여기는 html영역입니다.-->
+        <!--<a href="/about">어바웃페이지로 이동</a>-->
+        <img src="{{ url_for('static', filename='image/trend_logo.png') }}">
+    </div>
+
+    <div class="humor_content">
+        <h1>'오늘의 유머' 인기검색어</h1>
+        <ul>
+            {% for i in range(0, list_humor_len) %}
+                <a href={{humor_href[i]}}>
+                    <li>
+                        {{humor[i]}}
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="clien_content">
+        <h1>'클리앙' 인기검색어</h1>
+        <ul>
+            {% for i in range(0, list_clien_len) %}
+                <a href={{clien_href[i]}}>
+                    <li>
+                        {{clien[i]}}
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

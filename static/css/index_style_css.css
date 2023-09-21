@@ -1,0 +1,59 @@
+.humor_content {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+    border: 20px solid #FFFFFF;
+    background-color:#F08080;
+    border-radius: 80px;
+
+}
+
+.clien_content {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+    border: 20px solid #FFFFFF;
+    background-color:#6b98e8;
+    border-radius: 80px;
+
+}
+
+.humor_content a {
+    color: #000000;
+    text-decoration-line: none;
+    /*text-decoration-color : red;*/
+}
+
+.humor_content a:hover {
+    /*커서가 올라가 있는 div 요소*/
+    color:red;
+}
+
+.clien_content a {
+    color: #000000;
+    text-decoration-line: none;
+    /*text-decoration-color : red;*/
+}
+
+.clien_content a:hover {
+    /*커서가 올라가 있는 div 요소*/
+    color:blue;
+}
+
+img {
+    padding-top: 50px;
+    display: block; 
+    margin: 0px auto;
+}
